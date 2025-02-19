@@ -28,7 +28,7 @@ class MainApp extends StatelessWidget {
       home: Consumer<AppProvider>(
         builder: (context, appProvider, child) {
           return appProvider.isFirstLaunch
-              ? const IntroScreen()
+              ? IntroScreen()
               : const LoginScreen();
         },
       ),
